@@ -25,7 +25,7 @@ export default {
     // }, /*in a new version their is no need for watch https://github.com/vuejs/vue-router/tree/dev/examples/route-props*/ */
     methods: {
         navigateToHome() {
-            this.$router.push('/');
+            this.$router.push('/'); //{ name: 'home'}
         }
     }
 }
