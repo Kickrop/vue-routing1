@@ -19,6 +19,7 @@ export const routes = [
         { path: ':id', component: UserDetail },
         { path: ':id/edit', component: UserEdit, name: 'userEdit' }
     ] },
-    { path: '/redirect-me', redirect: '/user' } //redirect: { name: 'home'}
+    { path: '/redirect-me', redirect: '/user' }, //redirect: { name: 'home'}
+    { path: '*', redirect: '/' } //everything except paths above will lead to home
 ];
 // routes can be named. name: home
